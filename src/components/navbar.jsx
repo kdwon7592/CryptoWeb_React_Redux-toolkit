@@ -14,7 +14,7 @@ const Navbar = props => {
         {
             key: 'cryptocyrrencies',
             icon: <FundOutlined />,
-            label: <Link to="/cryptocyrrencies">Cryptocyrrencies</Link>,
+            label: <Link to="/cryptocurrencies">Cryptocurrencies</Link>,
         },
         {
             key: 'exchanges',
