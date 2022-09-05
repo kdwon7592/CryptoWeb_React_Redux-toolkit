@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { useSelector, useDispatch } from "react-redux";
-import { toggleTheme } from "../services/themeSlice";
+// import { useSelector, useDispatch } from "react-redux";
+// import { toggleTheme } from "../services/themeSlice";
 import { Menu, Typography, Avatar, Button } from "antd"
 import { Link } from "react-router-dom"
 import { HomeOutlined, BulbOutlined, FundOutlined, MenuOutlined } from "@ant-design/icons"
@@ -9,8 +9,8 @@ import icon from "../images/cryptocurrency.png"
 
 
 const Navbar = () => {
-    const dispatch = useDispatch();
-    const darkMode = useSelector((state) => state.theme.darkMode);
+    // const dispatch = useDispatch();
+    // const darkMode = useSelector((state) => state.theme.darkMode);
 
     const [activeMenu, setActiveMenu] = useState(true);
     const [screenSize, setScreenSize] = useState(null);
