@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Select, Typography, Row, Col, Card } from 'antd'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loader from './loader';
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -19,7 +20,7 @@ const News = ({ simplified }) => {
 
     console.log(newsCategory);
 
-    if (isFetching) return 'Loading...';
+    if (isFetching) return <Loader />;
 
     return (
         <>

@@ -4,6 +4,7 @@ import { Typography, Row, Col, Statistic } from 'antd'
 import { Link } from 'react-router-dom'
 import { useGetCryptosQuery } from '../services/cryptoApi'
 import { Cryptocurrencies, News } from '.'
+import Loader from './loader'
 
 const { Title } = Typography;
 
@@ -13,7 +14,7 @@ const Homepage = () => {
     console.log('homepage' + Date.now());
     console.log(data);
 
-    if (isFetching) return 'Loading...'
+    if (isFetching) return <Loader />
 
     return (
         <>

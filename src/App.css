@@ -50,10 +50,11 @@ a:hover{
     display: flex;
     padding: 20px;
     align-items: center;
-    width: 100%;
+    width: 100%;    
 }
 .logo{
-    margin:0 0 0 15px;
+    margin-left: 15px;
+    padding-top: 10px;
 }
 .logo a{
    color: white;
@@ -319,9 +320,10 @@ width: 70%;
 }
 
 .chart-header{
+    margin-top : 10px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 10px;
     color: #0071bd;
 }
 .chart-title{
